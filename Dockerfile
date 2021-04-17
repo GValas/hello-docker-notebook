@@ -1,7 +1,4 @@
-FROM ubuntu:20.10
-RUN apt-get update -y 
-RUN apt-get install -y nano git python3-pip
-RUN pip install --upgrade pip
+FROM python:3.8.9-slim
 COPY . /notebook
 WORKDIR /notebook
 RUN pip install -r requirements.txt
