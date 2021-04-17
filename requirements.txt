@@ -1,4 +1,7 @@
+numpy
+scipy
 sklearn
 jupyter
-matplotlib 
 pandas
+matplotlib 
+seaborn
