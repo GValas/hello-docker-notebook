@@ -1,10 +1,12 @@
-FROM python:3.8.9-slim
+# working with python 3.9, in a local share
+FROM python:3.9
+ADD . /workspace
 WORKDIR /workspace
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-EXPOSE 12001
-CMD jupyter notebook --allow-root --port=12001 --ip=0.0.0.0 --no-browser --NotebookApp.token='' --NotebookApp.password=''
 
-# docker build -t hello-docker-notebook:latest .
-# docker container rm notebook
-# docker run -it --name notebook -p 12001:12001 -v $(pwd):/workspace hello-docker-notebook
+# install jupyter dependencies, and run it
+RUN python -m pip install -r requirements.txt
+EXPOSE 12001
+
+# run manually
+# python -m jupyter notebook --allow-root --port=12001 --ip=localhost --no-browser 
+# --NotebookApp.token='' --NotebookApp.password=''"

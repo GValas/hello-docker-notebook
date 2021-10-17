@@ -1,0 +1,12 @@
+{
+	"name": "Jupyter notebook",
+	"dockerFile": "../Dockerfile",
+	"extensions": [
+		"ms-python.python",
+	],
+	"settings": {
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"editor.formatOnSave": true,
+	},
+}
