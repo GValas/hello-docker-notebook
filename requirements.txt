@@ -1,7 +1,1 @@
-numpy
-scipy
-sklearn
-jupyter
-pandas
-matplotlib 
-seaborn
+networkx
