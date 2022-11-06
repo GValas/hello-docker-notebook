@@ -1,1 +1,16 @@
+# dev tools
+pylint 
+pytest 
+black 
+mypy
+pytest
+
+# data science tools
+numpy 
+scipy 
+sklearn 
+notebook 
+pandas 
+matplotlib 
+seaborn 
 networkx
